@@ -9,6 +9,7 @@ import Button from "./components/Button.js";
 import Container from "./components/Container.js";
 import Input from "./components/Input.js";
 import Card from './components/Card.js';
+import SlideShow from './components/SlideShow.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -31,6 +32,9 @@ root.render(
       <Card>
         <img src='assets/images/image.png' alt=''/>
       </Card>
+    </Container>
+    <Container>
+      <SlideShow carouselWaitTime={2000}/>
     </Container>
   </React.StrictMode>
 );
